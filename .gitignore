@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.local
+*.egg-info/
+dist/
+build/
+
+# Node / frontend
+node_modules/
+.npm
+dist/
+.next/
+out/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Local data (optional: uncomment if you don't want to track large SDF/CSV)
+# *.sdf.gz
+# *.csv
