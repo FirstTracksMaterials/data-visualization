@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Molecule Explorer — First Tracks Materials</title>
+  <style>
+    :root {
+      --ftm-blue: #4472c4;
+      --ftm-orange: #c17636;
+      --bg-dark: #0b1520;
+      --bg-surface: #111c28;
+      --text-primary: #e8eaed;
+      --text-muted: #9aa0a6;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      min-height: 100%;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-primary);
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .logo {
+      max-width: 320px;
+      width: 90%;
+      height: auto;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--ftm-blue);
+      margin: 0 0 0.5rem;
+    }
+
+    .tagline {
+      color: var(--text-muted);
+      font-size: 1rem;
+      max-width: 480px;
+      text-align: center;
+      margin: 0 0 2rem;
+    }
+
+    .cta {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      background: var(--ftm-orange);
+      color: var(--bg-dark);
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 6px;
+      transition: filter 0.15s ease;
+    }
+
+    .cta:hover {
+      filter: brightness(1.1);
+    }
+
+    .footer {
+      margin-top: auto;
+      padding-top: 2rem;
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <img class="logo" src="assets/first-tracks-materials-logo.png" alt="First Tracks Materials">
+  <h1>Molecule Explorer</h1>
+  <p class="tagline">Browse and visualize PubChem-derived molecules. Drill down by family, seed, and method; inspect metadata and 3D conformers.</p>
+  <a class="cta" href="#">Coming soon</a>
+  <footer class="footer">First Tracks Materials — Molecule Explorer (local prototype)</footer>
+</body>
+</html>

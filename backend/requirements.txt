@@ -1,0 +1,16 @@
+# API & server
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+
+# DB
+asyncpg>=0.29.0
+sqlalchemy[asyncio]>=2.0.0
+
+# ETL & data
+pandas>=2.0.0
+
+# Chemistry (molblock -> JSON adapter, SDF parsing)
+rdkit>=2023.9.1
+
+# CLI
+python-dotenv>=1.0.0

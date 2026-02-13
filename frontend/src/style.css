@@ -1,0 +1,218 @@
+:root {
+  --ftm-blue: #4472c4;
+  --ftm-orange: #c17636;
+  --bg-dark: #0b1520;
+  --bg-surface: #111c28;
+  --bg-card: #151f2e;
+  --text-primary: #e8eaed;
+  --text-muted: #9aa0a6;
+  --border: #2a3645;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: var(--bg-dark);
+  color: var(--text-primary);
+  min-height: 100vh;
+}
+
+#app {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+header img {
+  height: 48px;
+  width: auto;
+}
+
+header h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--ftm-blue);
+  margin: 0;
+}
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.breadcrumb span {
+  cursor: pointer;
+}
+
+.breadcrumb span:hover {
+  color: var(--ftm-blue);
+}
+
+.breadcrumb .sep {
+  cursor: default;
+  color: var(--border);
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.card h2 {
+  font-size: 1rem;
+  color: var(--ftm-blue);
+  margin: 0 0 0.5rem;
+}
+
+.families, .seeds {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.families button, .seeds button {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.families button:hover, .seeds button:hover {
+  border-color: var(--ftm-blue);
+  color: var(--ftm-blue);
+}
+
+.families button.active, .seeds button.active {
+  background: var(--ftm-blue);
+  border-color: var(--ftm-blue);
+  color: var(--bg-dark);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+th, td {
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+th {
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+tr:hover td {
+  background: var(--bg-surface);
+}
+
+tr[data-cid] {
+  cursor: pointer;
+}
+
+.detail-panel {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.detail-panel h3 {
+  color: var(--ftm-orange);
+  margin: 0 0 0.5rem;
+}
+
+.detail-panel dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.25rem 1.5rem;
+  margin: 0;
+}
+
+.detail-panel dt {
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.viewer-wrap {
+  margin-top: 1rem;
+  height: 400px;
+  background: var(--bg-surface);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.viewer-wrap moleculoids-viewer {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.loading {
+  color: var(--text-muted);
+  padding: 1rem;
+}
+
+.error {
+  color: #e57373;
+  padding: 0.5rem 0;
+}
+
+.btn {
+  background: var(--ftm-orange);
+  color: var(--bg-dark);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn:hover {
+  filter: brightness(1.1);
+}
+
+.select-dataset {
+  margin-bottom: 1rem;
+}
+
+.select-dataset select {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 1rem;
+}
